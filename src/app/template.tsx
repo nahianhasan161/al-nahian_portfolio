@@ -30,7 +30,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   });
   return (
     <>
-      {/*   <div
+      <div
         className={`fixed overflow-hidden bg-black h-screen w-screen flex items-center justify-center
         transition-all
         ${isLoading ? "opacity-1 z-50 " : "opacity-0  z-[-99]"}`}
@@ -65,8 +65,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         transition={{ type: "linear" }}
       >
         {children}
-      </motion.main> */}
-      <div>{children}</div>
+      </motion.main>
     </>
   );
 }

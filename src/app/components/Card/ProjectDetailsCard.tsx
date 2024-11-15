@@ -2,6 +2,7 @@ import Image from "next/image";
 import * as React from "react";
 import Arrow from "@/app/assets/icons/arrow_top_right.svg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export interface IProjectDetailsCardProps {
   imageUrl: string;
   title: string;
@@ -9,6 +10,7 @@ export interface IProjectDetailsCardProps {
   date: string;
   platform: string;
   tools: string;
+  link: string;
   addToRefs: any;
 }
 
@@ -37,6 +39,7 @@ export default React.forwardRef(function ProjectDetailsCard(
             alt="project"
             height={190}
             width={352}
+            quality={100}
             className="rounded-sm w-full"
           />
           <div className="flex flex-col  gap-[30px] ">
@@ -51,7 +54,8 @@ export default React.forwardRef(function ProjectDetailsCard(
               className="  
             "
             >
-              <button
+              <Link
+                href={props.link}
                 ref={props.addToRefs}
                 className="flex items-center gap-4
             font-[800] leading-[28px] tracking-[.8] project-button transition-all duration-500 ease-in-out
@@ -70,7 +74,7 @@ export default React.forwardRef(function ProjectDetailsCard(
                   />
                   {/* <Arrow className="h-10 w-10 image-2 transition-all duration-500 ease-in-out" /> */}
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -136,7 +140,7 @@ export default React.forwardRef(function ProjectDetailsCard(
             className="relative z-10 "
           >
             <h6 className="text-[#737373] text-xs sm:text-sm 2xl:text-lg font-medium">
-              Tools
+              Tech
             </h6>
             <p className="font-light text-sm sm:text-base 2xl:text-xl">
               {props.tools}

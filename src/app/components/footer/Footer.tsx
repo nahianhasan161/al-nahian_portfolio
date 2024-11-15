@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useTransform, motion, useScroll } from "framer-motion";
+import { details } from "@/constants/constant";
 
 export interface IFooterProps {
   addToRefs: any;
@@ -68,13 +69,13 @@ export default React.forwardRef(function Footer(props: IFooterProps, ref: any) {
               ref={props.addToRefs}
               className="relative before:absolute before:w-1 before:h-1 before:rounded-full before:bg-white before:-left-3 before:top-1/2 before:-translate-y-1/2"
             >
-              UI Design
+              Product Development
             </li>
             <li
               ref={props.addToRefs}
               className="relative before:absolute before:w-1 before:h-1 before:rounded-full before:bg-white before:-left-3 before:top-1/2 before:-translate-y-1/2"
             >
-              UX Design
+              Product Deployment
             </li>
             <li
               ref={props.addToRefs}
@@ -84,12 +85,23 @@ export default React.forwardRef(function Footer(props: IFooterProps, ref: any) {
             </li>
           </ul>
           <div className="">
-            <p
+            <div
               ref={props.addToRefs}
               className="text-xs 2xl:text-base font-light tracking-[.24px]"
             >
-              © 2023 All Rights Reserved. Amio Pial
-            </p>
+              © 2023 All Rights Reserved.{" "}
+              <div className="inline group">
+                <div className="svg-hover">
+                  {" "}
+                  {details.firstName + " " + details.lastName}
+                  <hr
+                    className="w-0 ml-[5%] mr-[10%] group-hover:w-[85%] h-[2px]
+                  transition-all duration-500 ease-in-ouiput
+                  "
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

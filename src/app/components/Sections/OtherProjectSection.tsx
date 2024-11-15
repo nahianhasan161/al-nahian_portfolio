@@ -7,26 +7,26 @@ export default function OtherProjectSection(props: IOtherProjectSectionProps) {
   return (
     <section className="mt-20">
       <h1 className="mb-10 text-[32px] 2xl:text-[43px] font-light">
-        Explore other Projects
+        Notion Universe Group
       </h1>
       <div className="space-y-8">
         <div className="flex gap-5 overflow-x-auto">
           <Image
-            src={"/Images/otherProjects/mobile_pages.png"}
+            src={"/Images/otherProjects/notion_universe.png"}
             alt="banner"
             height={150}
             width={250}
             className="rounded-sm"
           />
           <Image
-            src={"/Images/otherProjects/car_landing.png"}
+            src={"/Images/otherProjects/riyadhinno.png"}
             alt="banner"
             height={150}
             width={250}
             className="rounded-sm"
           />
           <Image
-            src={"/Images/otherProjects/referzip.png"}
+            src={"/Images/otherProjects/FSHD.png"}
             alt="banner"
             height={150}
             width={250}

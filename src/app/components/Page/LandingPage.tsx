@@ -21,6 +21,7 @@ import SlickSlider from "../slider/SlickSlider";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
+import { details } from "@/constants/constant";
 const mulish = Mulish({ subsets: ["latin"] });
 export default function LandingPage() {
   // using the hook
@@ -72,7 +73,7 @@ export default function LandingPage() {
 
     requestAnimationFrame(raf);
   });
-  useEffect(() => {});
+
   const addToRefs = (el: HTMLElement | null) => {
     if (el && !actionElements.current.includes(el)) {
       actionElements.current.push(el);
@@ -105,6 +106,7 @@ export default function LandingPage() {
     <main
       ref={brandProjectRef}
       className={`text-white    mx-auto ${mulish.className}`}
+      id="home"
     >
       {/* min-h-[300vh] */}
       <StickyCursor actionElements={actionElements} />
@@ -132,10 +134,7 @@ export default function LandingPage() {
         {/* <OtherProjectSection /> */}
         <div className="2xl:px-[10%]">
           <div className=" sub-section-padding bg-black 2xl:px-[10%]">
-            <MotoTextSection
-              addToRefs={addToRefs}
-              text="Designing Experiences, Shaping Perceptions & Elevating Businesses"
-            />
+            <MotoTextSection addToRefs={addToRefs} text={details.motoText} />
           </div>
           <SlickSlider />
           {/* <CoutesCardSection addToRefs={addToRefs} /> */}

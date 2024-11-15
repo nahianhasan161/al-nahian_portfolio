@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Mulish } from "next/font/google";
+import { details } from "@/constants/constant";
 const mulish = Mulish({ subsets: ["latin"] });
 export interface ILandingSectionProps {
   addToRefs?: any;
@@ -24,7 +25,7 @@ const LandingSection = React.forwardRef(function Landing(
             
             "
           >
-            UX Designer
+            {details.title1}
           </span>{" "}
           <span
             ref={props.addToRefs}

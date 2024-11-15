@@ -1,11 +1,13 @@
 import Image from "next/image";
 import * as React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export interface IOtherOptionProps {
   title: string;
   imageUrl: string;
   actionText: string;
+  link: string;
   addToRefs: any;
 }
 
@@ -63,7 +65,8 @@ export default function OtherOption(props: IOtherOptionProps) {
           width={297}
           className="w-full"
         />
-        <button
+        <Link
+          href={props.link}
           ref={props.addToRefs}
           className="flex items-center gap-4 text-base 2xl:text-xl
             font-bold leading-[20px] tracking-[.565] project-button transition-all duration-500 ease-in-out
@@ -81,7 +84,7 @@ export default function OtherOption(props: IOtherOptionProps) {
               className="image-2 transition-all duration-500 ease-in-out"
             />
           </div>
-        </button>
+        </Link>
       </div>
     </motion.div>
   );

@@ -7,6 +7,7 @@ import HamburgerIcon from "@/app/assets/icons/hamburger.svg";
 import Cross from "@/app/assets/icons/cross.svg";
 import { useState } from "react";
 import Link from "next/link";
+import { details } from "@/constants/constant";
 export interface IPrimaryNavbarProps {
   addToRefs: any;
 }
@@ -29,7 +30,10 @@ const PrimaryNavbar = React.forwardRef(function Button(
             </div>
             <div className="text-xs sm:text-[15px]">
               <h4>
-                <span className="text-white font-medium pb-1">Amio</span> Pial
+                {details.firstName}{" "}
+                <span className="text-white font-medium pb-1">
+                  {details.lastName}
+                </span>
               </h4>
               <h4>Based in Bangladesh</h4>
             </div>
@@ -37,7 +41,8 @@ const PrimaryNavbar = React.forwardRef(function Button(
         </div>
         <div className="flex items-center gap-4 md:gap-[50px] 2xl:gap-[67px]">
           <p className="md:block hidden underline cursor-pointer">Resume</p>
-          <button
+          <a
+            href={`mailto:${details.mail}`}
             className="px-3 sm:px-5 py-[6px] border-[.5px] border-white tracking-[.8px] rounded-[20px] 
           font-medium   bg-hover 
           text-xs sm:text-base 2xl:text-xl bg-white text-black
@@ -46,7 +51,7 @@ const PrimaryNavbar = React.forwardRef(function Button(
             ref={props.addToRefs}
           >
             Get in touch
-          </button>
+          </a>
           <div className="relative flex justify-center items-center">
             <div ref={props.addToRefs}>
               {!isActive ? (
@@ -77,9 +82,16 @@ const PrimaryNavbar = React.forwardRef(function Button(
                   : "opacity-0 translate-x-[50px] invisible"
               }`}
             >
-              <li>About</li>
-              <li>Blog</li>
-              <li>Store</li>
+              <li>
+                <Link href="#home">Home</Link>
+              </li>
+              <li>
+                <Link href="#projects">Projects</Link>
+              </li>
+
+              <li>
+                <Link href="#contact">Contact</Link>
+              </li>
               <li className="block md:hidden underline">Resume</li>
             </ul>
           </div>
