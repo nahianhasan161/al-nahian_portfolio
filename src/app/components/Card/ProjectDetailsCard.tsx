@@ -44,8 +44,8 @@ export default React.forwardRef(function ProjectDetailsCard(
           />
           <div className="flex flex-col  gap-[30px] ">
             <p
-              className="  leading-normal tracking-[1px] text-3xl
-            max-w-[80%] font-[300] 
+              className="  leading-normal tracking-[1px] text-2xl md:text-3xl
+            md:max-w-[80%] font-[300] 
             "
             >
               {props.description}

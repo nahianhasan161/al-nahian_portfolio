@@ -13,8 +13,8 @@ export default function CouteCard(props: ICouteCardProps) {
   return (
     <div
       key={props.key}
-      className="space-y-6 px-5 py-10 min-w-[320px] 
-  border  border-white/40 rounded-lg mx-4 min-h-max relative z-10"
+      className="space-y-6 px-5 py-10  h-[320px]
+  border  border-white/40 rounded-lg mx-4 min-h-max relative z-10 "
     >
       <div className="text-right relative">
         <Coute className="absolute top-[-20px] left-[-20px] z-[-1]" />
