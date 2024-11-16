@@ -30,6 +30,7 @@ export default function CouteCard(props: ICouteCardProps) {
             alt="avatar"
             height={50}
             width={50}
+            className="rounded-full"
           />
         </div>
         <p className="text-[10px] 2xl:text-xs">{props.name}</p>
