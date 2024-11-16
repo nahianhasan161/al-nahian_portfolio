@@ -88,10 +88,10 @@ body {
     @apply lg:px-[12.5rem] md:px-[11.5rem] sm:px-[3rem] px-[1.2rem];
   }
   .sub-section-padding {
-    @apply lg:px-[10rem] md:px-[10.5rem] sm:px-[2.5rem] px-[1.2rem];
+    @apply xl:px-[10rem]  sm:px-[2.5rem] px-[1.2rem];
   }
   .project-section-padding {
-    @apply lg:px-[7.5rem] md:px-[10.5rem] sm:px-[2.5rem] px-[1.2rem];
+    @apply xl:px-[7.5rem]  sm:px-[2.5rem] px-[1.2rem];
   }
   .sub-section-padding {
     @apply xl:px-[11.5rem] lg:px-[10.5rem] md:px-[8rem] sm:px-[2.5rem] px-[1.2rem];

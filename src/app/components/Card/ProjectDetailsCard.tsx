@@ -29,7 +29,7 @@ export default React.forwardRef(function ProjectDetailsCard(
       </h1>
       <div className="flex md:flex-row flex-col justify-between mt-7">
         <div
-          className="flex md:flex-row flex-col gap-[22px] 
+          className="flex lg:flex-row flex-col gap-[22px] 
         
         "
         >

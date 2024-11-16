@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CouteCard from "../Card/CouteCard";
+import { details } from "@/constants/constant";
 export interface ISlickSliderProps {}
 
 export default class SlickSlider extends Component {
@@ -16,7 +17,7 @@ export default class SlickSlider extends Component {
       autoplay: true,
       speed: 5000,
       /* autoplaySpeed: 100, */
-      adaptiveHeight: true,
+      adaptiveHeight: false,
       cssEase: "linear",
       responsive: [
         {
@@ -83,12 +84,16 @@ export default class SlickSlider extends Component {
       ],
     }; */
     return (
-      <div className="overflow-hidden bg-black ">
+      <div className="overflow-hidden bg-black lg:py-12 ">
         <Slider {...settings} className="">
-          <CouteCard />
-          <CouteCard />
-          <CouteCard />
-          <CouteCard />
+          {details.clients.map((client, index) => (
+            <CouteCard
+              key={index}
+              name={client.name}
+              quotes={client.quotes}
+              avatar={client.imageUrl}
+            />
+          ))}
         </Slider>
       </div>
     );
