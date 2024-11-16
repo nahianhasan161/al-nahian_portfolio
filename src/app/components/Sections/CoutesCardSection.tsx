@@ -12,10 +12,11 @@ export default React.forwardRef(function CoutesCardSection(
   return (
     <section className="overflow-hidden bg-black">
       <div className=" ">
+        {/*  <CouteCard />
         <CouteCard />
         <CouteCard />
-        <CouteCard />
-        <CouteCard />
+        <CouteCard /> */}
+        coutesCard
       </div>
     </section>
   );

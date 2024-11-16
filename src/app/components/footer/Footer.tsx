@@ -84,10 +84,10 @@ export default React.forwardRef(function Footer(props: IFooterProps, ref: any) {
               Product Strategy
             </li>
           </ul>
-          <div className="">
+          <div className="inline">
             <div
               ref={props.addToRefs}
-              className="text-xs 2xl:text-base font-light tracking-[.24px]"
+              className="inline-flex gap-1 text-xs 2xl:text-base font-light tracking-[.24px]"
             >
               © 2023 All Rights Reserved.{" "}
               <div className="inline group">
@@ -95,7 +95,7 @@ export default React.forwardRef(function Footer(props: IFooterProps, ref: any) {
                   {" "}
                   {details.firstName + " " + details.lastName}
                   <hr
-                    className="w-0 ml-[5%] mr-[10%] group-hover:w-[85%] h-[2px]
+                    className="w-0 mr-[10%] group-hover:w-[100%] h-[2px]
                   transition-all duration-500 ease-in-ouiput
                   "
                   />

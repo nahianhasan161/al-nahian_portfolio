@@ -11,7 +11,7 @@ export const details = {
     imageUrl: "/Images/projects/muokicaleb.png",
     description:
       "A user-focused portfolio website of devops, optimizing user experice with nextjs.",
-    date: "January 25th 2022",
+    date: "May 6th 2023",
     platform: "Web",
     tech: "Nextjs",
     link: "https://muokicaleb.com/",
@@ -21,7 +21,7 @@ export const details = {
     imageUrl: "/Images/projects/shpper.png",
     description:
       "Personal Shopper which connect buyers with trusted travelers acting as personal shoppers.",
-    date: "January 25th 2022",
+    date: "Feb 14th 2024",
     platform: "Web",
     tech: "Nextjs",
     link: "https://www.shpper.net/",
@@ -31,7 +31,7 @@ export const details = {
     imageUrl: "/Images/projects/zoa.png",
     description:
       "A user-focused redesign of Spotify's interface, optimizing music discovery and enjoyment.",
-    date: "January 25th 2022",
+    date: "Aug 10th 2023",
     platform: "Web",
     tech: "Nextjs",
     link: "https://zoa.ai/",
