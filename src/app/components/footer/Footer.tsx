@@ -89,7 +89,7 @@ export default React.forwardRef(function Footer(props: IFooterProps, ref: any) {
               ref={props.addToRefs}
               className="inline-flex gap-1 text-xs 2xl:text-base font-light tracking-[.24px]"
             >
-              © 2023 All Rights Reserved.{" "}
+              © 2024 All Rights Reserved.{" "}
               <div className="inline group">
                 <div className="svg-hover">
                   {" "}

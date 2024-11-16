@@ -86,4 +86,6 @@ export const details = {
   github: "https://github.com/nahianhasan161/",
   fiver: "https://www.fiverr.com/nahianhasan2167/",
   Linkedin: "https://www.linkedin.com/in/al-nahian-hasan/",
+
+  cvLink: "/files/Al-Nahian_Hasan_Tech.pdf",
 };
